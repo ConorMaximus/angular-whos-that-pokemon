@@ -1,0 +1,8 @@
+<div class="pokemon-container">
+    <h3 class="min-height">{{resultMessage}}</h3>
+    <img [ngClass]="correctGuess ? 'correct' : 'wrong'" [src]="selectedPokemon.sprites.other.home.front_default" alt="Pokemon">
+    <br/>
+    <app-pokemon-options [roundOver]="roundOver" [pokemonOptions]="randomSetOfPokemon" (selectPokemonEvent)="selectedPokemonEvent($event)"></app-pokemon-options>
+    <br/>
+    <button (click)="getRandomPokemon()">Try again</button>
+</div>

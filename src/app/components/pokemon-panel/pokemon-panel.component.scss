@@ -1,0 +1,17 @@
+.wrong {
+  filter: brightness(0%);
+}
+
+.correct {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+.min-height {
+  height: 10px;
+}
+
+
+  
